@@ -39,6 +39,12 @@ function zmiennaData(){
   //alert('Wynik wynosi: ' + wynik);
 }
 
+function odczyt(){
+  let imie = $('#imie').val();
+  $('#wypiszImie').html('Twę imię, hrabio: ' + imie);
+  //alert('Witaj, ' + imie);
+}
+
 /*
 document.addEventListener("DOMContentLoaded",function(event){
   let elem = document.getElementById("box1");

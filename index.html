@@ -7,10 +7,25 @@
     <script src="main.js"></script>
   </head>
   <body>
-    <div id="box1" class="box" onclick="kolor('#ff0000', '#box1');">Into the fires of battle</div>
-    <div id="box2" class="box" onclick="kolor('#00ff00', '#box2');">unto the Anvil of War!</div>
-    <div id="box3" class="box" onclick="kolor('#0000ff', '#box3');">For Vulkan! For the Emperor!</div>
-    <div class="box">Vulkan ma <span id="liczba_lat"></span> lat. Ale i tak żyje!</div>
+    <div id="box1" class="box" onclick="kolor('#ff0000', '#box1');">
+      Into the fires of battle
+    </div>
+    <div id="box2" class="box" onclick="kolor('#00ff00', '#box2');">
+      unto the Anvil of War!
+    </div>
+    <div id="box3" class="box" onclick="kolor('#0000ff', '#box3');">
+      For Vulkan! For the Emperor!
+    </div>
+    <div class="box">
+      Vulkan ma <span id="liczba_lat"></span> lat. Ale i tak żyje!
+    </div>
     <div id="identyfikator" data-var1="5" data-var2="3"> Zmienna </div>
+    <input type="text" id="imie">
+    <br>
+    <div style="border:1px solid #ccc; float: left; padding:5px 10 px;" onclick="odczyt();">
+    Klikaj we mnie!
+    </div>
+    <br class="box">
+    <div id="wypiszImie" class="box"> Imię</div>
   </body>
 </html>
