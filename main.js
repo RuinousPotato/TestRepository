@@ -10,6 +10,7 @@ $(document).ready(function(){
   console.log($(".box").css('font-size'));
   fun1();
   wypisz_lata();
+  zmiennaData();
 });
 
 function fun1(){
@@ -26,6 +27,16 @@ function kolor(kolor, local){
 function wypisz_lata() {
   let lata = 8258;
   $('#liczba_lat').html(lata);
+}
+
+function zmiennaData(){
+  $('#identyfikator').data('var1',4);
+
+  let go1 = $('#identyfikator').data('var1');
+  let go2 = $('#identyfikator').data('var2');
+  let wynik = go1 + go2;
+  $('#identyfikator').html('Wynik wynosi: ' + wynik);
+  //alert('Wynik wynosi: ' + wynik);
 }
 
 /*
