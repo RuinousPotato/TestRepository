@@ -11,6 +11,7 @@ $(document).ready(function(){
   fun1();
   wypisz_lata();
   zmiennaData();
+  listener_box();
 });
 
 function fun1(){
@@ -43,6 +44,16 @@ function odczyt(){
   let imie = $('#imie').val();
   $('#wypiszImie').html('Twę imię, hrabio: ' + imie);
   //alert('Witaj, ' + imie);
+}
+
+function listener_box() {
+  $('.box').on('click', function(){
+      id = $(this).data('id');
+      console.log('Kliknięto box numer '+id);
+
+      $('.box').css('backgroundColor','#fff');
+      $(this).css('backgroundColor','#a00');
+  });
 }
 
 /*
